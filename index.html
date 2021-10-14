@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Inertia Editor</title>
+    <!---- Font Awesome Cdn Linkage ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!---- CSS Linkage ------>
+    <link rel="stylesheet" href="style.css">
+
+    <!---- Favicon Linkage ---->
+    <link rel="shortcut icon" href="logo1.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="image">
+            <img src="11.png" alt="">
+            <h1>&nbsp;&nbsp;CODE INERTIA EDITOR</h1>
+        </div>
+        <div class="social">
+            <div class="icon">
+                <a href="https://reddevill007.github.io/my-portfolio/"><i class="fas fa-globe-asia"></i></a>
+            </div>
+            <div class="icon">
+                <a href="https://www.instagram.com/red._.devill/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/saurabh-pandey-161348200/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/reddevill007"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="editor">
+
+        <div class="code">
+            <div class="code-box">
+                <textarea spellcheck="false"  id="html-code" class="edit" placeholder="<!-- HTML CODE -->"></textarea>
+                <button class="collapse"><i class="fas fa-compress-alt"></i></button>
+                <button class="tag html"><i class="fab fa-html5"></i></button>
+                <button class="copy"><i class="far fa-copy"></i></button>
+            </div>
+            <div class="code-box">
+                <textarea spellcheck="false" id="css-code" class="edit" placeholder="/* CSS CODE */"></textarea>
+                <button class="collapse"><i class="fas fa-compress-alt"></i></button>
+                <button class="tag css"><i class="fab fa-css3-alt"></i></button>
+                <button class="copy"><i class="far fa-copy"></i></button>
+            </div>
+            <div class="code-box">
+                <textarea spellcheck="false" id="js-code" class="edit" placeholder="/* JAVASCRIPT CODE */"></textarea>
+                <button class="collapse"><i class="fas fa-compress-alt"></i></button>
+                <button class="tag js"><i class="fab fa-js-square"></i></button>
+                <button class="copy"><i class="far fa-copy"></i></button>
+            </div>
+        </div>
+        <div class="preview">
+            <iframe id="output"></iframe>
+            <button><i class="fas fa-play"></i> &nbsp;&nbsp;Result</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
