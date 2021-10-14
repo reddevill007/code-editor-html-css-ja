@@ -5,7 +5,7 @@ Javascript based HTML, CSS, and Javascript Code Editor and interface is made usi
 Inspired by Codepen and w3school, You can write complete HTML, CSS, and Javascript code in this web editor. You can view your text output in the output section which is updated every second.
 
 # Demo
-For a demo of Inertia AI, visit [INERTIA - CODE EDITOR](https://reddevill007.github.io/Javascript-Virtual-Assitant/)
+For a demo of Inertia AI, visit [INERTIA - CODE EDITOR](https://reddevill007.github.io/code-editor-html-css-ja/)
 
 ![alt text for screen readers](https://github.com/reddevill007/code-editor-html-css-ja/blob/main/ss.png "Preview of code editor")
 
