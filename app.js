@@ -2,6 +2,10 @@ const collapse = document.querySelectorAll('.collapse');
 const edit = document.querySelectorAll('.code-box');
 const copy = document.getElementsByClassName('copy');
 
+window.onbeforeunload = function(event) {
+    return confirm("Confirm refresh");
+};
+
 
 function run() {
     let htmlCode = document.getElementById('html-code').value;
