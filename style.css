@@ -99,6 +99,8 @@ header .social .icon a:hover {
   height: 100%;
 }
 
+
+
 .editor .code .code-box {
   width: 100%;
   height: calc(100% / 3);
@@ -221,4 +223,20 @@ textarea::-webkit-scrollbar-thumb {
   background-color: #1d1f1e;
   cursor: pointer;
   border-radius: 10px;
+}
+
+@media(max-width: 1000px){
+  .editor{
+    height: 200vh;
+    flex-direction: column;
+  }
+  .editor .code{
+    width: 100%;
+    height: calc(100vh - 50px);
+  }
+
+  .editor .preview{
+    width: 100%;
+    height: calc(50% + 50px);
+  }
 }
