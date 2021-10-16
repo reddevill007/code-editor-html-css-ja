@@ -240,3 +240,33 @@ textarea::-webkit-scrollbar-thumb {
     height: calc(50% + 50px);
   }
 }
+
+@media(max-width: 1000px) {
+  header {
+    padding: 0 10px;
+  }
+
+  header .image h1 {
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #282c3b;
+    font-family: "Cormorant", serif;
+  }
+  
+  header .image img {
+    height: 30px;
+  }
+
+  header .social {
+    gap: 10px;
+  }
+  
+  header .social .icon a {
+    border: 1px solid #282c3b;
+    height: 25px;
+    width: 25px;
+    padding: 10px;
+    font-size: 13px;
+  }
+}
