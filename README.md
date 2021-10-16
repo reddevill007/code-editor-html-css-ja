@@ -17,6 +17,7 @@ For a demo of Inertia CODE EDITOR, visit [INERTIA - CODE EDITOR](https://reddevi
 - Live Server
 - Resizable edit area
 - Copy button to copy your code
+- Popup box when reloading or leaving so your code would not be lost
 
 
   
