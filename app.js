@@ -1,10 +1,36 @@
 const collapse = document.querySelectorAll('.collapse');
 const edit = document.querySelectorAll('.code-box');
-const copy = document.getElementsByClassName('copy');
+const copyHtml = document.getElementById('cpHtml');
+const copyCss = document.getElementById('cpCss');
+const copyJs = document.getElementById('cpJs');
+const htmlCode = document.getElementById('html-code');
+const cssCode = document.getElementById('css-code');
+const jsCode = document.getElementById('js-code');
+
+// console.log(htmlCode)
+
 
 window.onbeforeunload = function(event) {
     return confirm("Confirm refresh");
 };
+
+copyHtml.addEventListener("click", function(event) {
+    event.preventDefault();
+    htmlCode.select();
+    document.execCommand("copy");
+});
+
+copyCss.addEventListener("click", function(event) {
+    event.preventDefault();
+    cssCode.select();
+    document.execCommand("copy");
+});
+
+copyJs.addEventListener("click", function(event) {
+    event.preventDefault();
+    jsCode.select();
+    document.execCommand("copy");
+});
 
 
 function run() {
