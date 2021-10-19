@@ -14,25 +14,6 @@ window.onbeforeunload = function(event) {
     return confirm("Confirm refresh");
 };
 
-copyHtml.addEventListener("click", function(event) {
-    event.preventDefault();
-    htmlCode.select();
-    document.execCommand("copy");
-});
-
-copyCss.addEventListener("click", function(event) {
-    event.preventDefault();
-    cssCode.select();
-    document.execCommand("copy");
-});
-
-copyJs.addEventListener("click", function(event) {
-    event.preventDefault();
-    jsCode.select();
-    document.execCommand("copy");
-});
-
-
 function run() {
     let htmlCode = document.getElementById('html-code').value;
     let cssCode = "<style>" + document.getElementById('css-code').value + "</style>";
@@ -111,4 +92,22 @@ document.getElementById('js-code').addEventListener('keydown', function (e) {
         this.selectionStart =
             this.selectionEnd = start + 1;
     }
+});
+
+copyHtml.addEventListener("click", function(event) {
+    event.preventDefault();
+    htmlCode.select();
+    document.execCommand("copy");
+});
+
+copyCss.addEventListener("click", function(event) {
+    event.preventDefault();
+    cssCode.select();
+    document.execCommand("copy");
+});
+
+copyJs.addEventListener("click", function(event) {
+    event.preventDefault();
+    jsCode.select();
+    document.execCommand("copy");
 });
