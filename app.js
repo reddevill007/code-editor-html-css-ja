@@ -94,7 +94,6 @@ document.getElementById('js-code').addEventListener('keydown', function (e) {
     }
 });
 
-window.onload=function(){
     copyHtml.addEventListener("click", function(event) {
         event.preventDefault();
         htmlCode.select();
@@ -112,6 +111,4 @@ window.onload=function(){
         jsCode.select();
         document.execCommand("copy");
     });
-}
-
 
