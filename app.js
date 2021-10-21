@@ -94,20 +94,24 @@ document.getElementById('js-code').addEventListener('keydown', function (e) {
     }
 });
 
-copyHtml.addEventListener("click", function(event) {
-    event.preventDefault();
-    htmlCode.select();
-    document.execCommand("copy");
-});
+window.onload=function(){
+    copyHtml.addEventListener("click", function(event) {
+        event.preventDefault();
+        htmlCode.select();
+        document.execCommand("copy");
+    });
 
-copyCss.addEventListener("click", function(event) {
-    event.preventDefault();
-    cssCode.select();
-    document.execCommand("copy");
-});
+    copyCss.addEventListener("click", function(event) {
+        event.preventDefault();
+        cssCode.select();
+        document.execCommand("copy");
+    });
 
-copyJs.addEventListener("click", function(event) {
-    event.preventDefault();
-    jsCode.select();
-    document.execCommand("copy");
-});
+    copyJs.addEventListener("click", function(event) {
+        event.preventDefault();
+        jsCode.select();
+        document.execCommand("copy");
+    });
+}
+
+
